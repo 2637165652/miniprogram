@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <!-- <view class="header weight">《海贼王(航海王)》在线观看!</view> -->
+  <view class="video_container weight">
+    <video
+      class="video weight"
+      title="海贼王{{currentVideo._id}}话"
+      src="{{currentVideo.fileID}}"
+      show-play-btn="{{true}}" 
+      autoplay="{{false}}"
+      controls
+    ></video>
+  </view>
+  <view class="introduction weight">
+    <!-- 简介：拥有财富、名声、权力，这世界上一切的男人海贼王哥尔·D·罗杰，在临刑前说了一句话，让全世界的人都涌向了大海。
+    “想要我的宝藏吗？如果想要的话，那就到海上去找吧，我全部都放在那里了！”。于是，世界开始迎来“大海贼时代” 。
+    其中，有一个梦想成为海贼王的少年，蒙奇·D·路飞开启了他的传奇航海之旅...... -->
+    【简介】时值“大海贼时代”！有一个梦想成为海贼王的少年——蒙奇·D·路飞，为了找寻传说中的大秘宝ONE PIECE，开启了他的航海冒险之旅......
+  </view>
+  <view class="txt">
+    【海贼王最新几话】
+  </view>
+  <!-- <view class="line"></view> -->
+  <!-- <view class="button_container weight" wx:if="videos">
+    <button  plain="true" size="mini" class="videio_btn weight" 
+    wx:for="{{videos}}" wx:key="index" bindtap="change" data-videoitem="{{item}}">
+      <text class="text">{{item._id}}</text>
+    </button>
+  </view> -->
+  <view class="button_container weight">
+    <view class="video_btn weight" wx:for="{{videos}}" wx:key="index">
+      <button class="{video_button, weight,{{active:currentIndex==index}}}"  class="" bindtap="changeVideo" data-video="{{item}}" plain="true" size="mini">
+        <text class="episodeNum">{{item._id}}</text>
+      </button>
+    </view>
+  </view>
+</view>

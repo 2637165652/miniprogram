@@ -1,0 +1,10 @@
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button bindtap="getOpenid">点击获取 openid</button>
+    <view>{{openid}}</view>
+  </view>
+
+
+</view>

@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/usermessage/usermessage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BFFF",
+    "navigationBarTitleText": "海贼王大部落",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_local.png",
+        "selectedIconPath": "images/selectedIcon_local.png"
+      },
+      {
+        "pagePath": "pages/usermessage/usermessage",
+        "text": "我的",
+        "iconPath": "images/icon_cloud.png",
+        "selectedIconPath": "images/selectedIcon_cloud.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
