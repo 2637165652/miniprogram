@@ -25,10 +25,10 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
-	"appid": "wx0eca911e777465af",
+	"appid": "wx54950497fb74d65a",
 	"projectname": "onepiece",
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",

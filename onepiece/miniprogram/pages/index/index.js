@@ -63,7 +63,7 @@ Page({
 
   onLoad: function() {
     // 获取video fileID
-    db.collection('videos').get().then(res=>{
+    db.collection('videos').orderBy('_id', 'asc').get().then(res=>{
       // console.log(res.data);
       const len = res.data.length;
       this.setData({
